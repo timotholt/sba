@@ -1,0 +1,100 @@
+
+@media (max-width: 799) {
+
+    /* CSS for images */
+    .croppedImage {
+        object-fit: cover;
+        overflow: hidden;
+        object-position: 0 0;
+    }
+
+    #image01 {
+        /* object-position: 0 0; */
+    }
+
+    #image02 {
+        /* object-position: 0 0; */
+    }
+
+    #image03 {
+        /* object-position: 0 0; */
+    }
+    
+    #image04 {
+        /* object-position: 0 0; */
+    }
+
+    #image05 {
+        /* object-position: 0 0; */
+    }
+
+    #image06 {
+        /* object-position: 0 0; */
+    }
+
+    #image07 {
+        /* object-position: 0 0; */
+    }
+
+    #image08 {
+        /* object-position: 0 0; */
+    }
+
+    #image09 {
+        /* object-position: 0 0; */
+    }
+    
+    #image10 {
+        /* object-position: 0 0; */
+    }
+}
+
+@media (min-width: 800) {
+
+    /* CSS for images */
+    .croppedImage {
+        object-fit: cover;
+        overflow: hidden;
+        object-position: 0 0;
+    }
+
+    #image01 {
+        /* object-position: 0 0; */
+    }
+
+    #image02 {
+        /* object-position: 0 0; */
+    }
+
+    #image03 {
+        /* object-position: 0 0; */
+    }
+    
+    #image04 {
+        /* object-position: 0 0; */
+    }
+
+    #image05 {
+        /* object-position: 0 0; */
+    }
+
+    #image06 {
+        /* object-position: 0 0; */
+    }
+
+    #image07 {
+        /* object-position: 0 0; */
+    }
+
+    #image08 {
+        /* object-position: 0 0; */
+    }
+
+    #image09 {
+        /* object-position: 0 0; */
+    }
+
+    #image10 {
+        /* object-position: 0 0; */
+    }
+}
