@@ -10,129 +10,134 @@ html{
 }
 
 body{
-    padding: min(50px, 7%);
-    background-color: rgb(13, 13, 20);
+    /* padding: min(50px, 7%); */
+    background-color: #cfcfcf;
+    /* background-color: rgb(13, 13, 20); */
+
+    /* padding: 20px; */
 }
 
 h1 {
     margin: 30px 0;
 }
 
+/* The website is built on cards */
 .card {
-    padding: 2em;
-    border: 1px solid rgb(75, 8, 9);
-    border-radius: 10px;
-    background-color: #222222;
     text-align: center;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
 }
 
-@media (max-width: 799) {
+
+/* MEDIA QUERY */
+
+/* On tiny Screens, no gap or padding and only a single column */
+@media only screen and (min-width : 480px) {
+
+    /* FOR TESTING */
+    body {
+        background-color: blue;
+    }
+
+    .grid-container {
+        display: grid;
+        gap: 0px;
+        padding: 0px;
+        grid-template-columns: 1;
+        justify-content: center;
+    }
+
+    /* On tiny screens, we use 16 / 9 */
+    .imageContainer {
+        max-width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        aspect-ratio: 16 / 9;
+    }
+}
+
+/* BIG SCREENS */
+@media only screen and (min-width : 640px) {
+
+    /* For testing media queries */
+    body {
+        background-color: black;
+    }
+
+    /* On big screens, multiple columns with a gap and padding */
+    .grid-container {
+        display: grid;
+        gap: 10px;
+        padding: 10px;
+    
+        /* Auto = Dynamic # of columms */
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        justify-content: center;
+    }
+
+    /* On big screens, we use 16 / 9 */
+    .imageContainer {
+        max-width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        aspect-ratio: 16 / 9;
+    }
+}
+
+
+
+/* Tiny screens in landscape mode ----------*/
+@media only screen and (min-width : 321px) {
+  /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+  /* Styles */
+}
+
+
+/* ALL LANDSCAPE
+@media (orientation: landscape) {
+    .imageContainer {
+        max-width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        aspect-ratio: 9 / 16;
+        /* aspect-ratio: 16 / 9; */
+    /* }
+} */
+
+/* ALL PORTRAIT
+@media (orientation: portrait) {
+    .imageContainer {
+        max-width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        aspect-ratio: 16 / 9;
+    }
+} */
+
+/* @media (max-width: 799) { */
 
     /* CSS for images */
-    .croppedImage {
+    /* .imageContainer {
+        max-width: 100%;
+        overflow: hidden;
+        aspect-ratio: 9 / 16;
+        object-fit: cover;
+    } */
+/* } */
+
+/* @media (min-width: 800) { */
+
+    /* CSS for images */
+    /* .croppedImage {
         object-fit: cover;
         overflow: hidden;
         object-position: 0 0;
-    }
+    } */
 
-    #image01 {
-        /* object-position: 0 0; */
-    }
-
-    #image02 {
-        /* object-position: 0 0; */
-    }
-
-    #image03 {
-        /* object-position: 0 0; */
-    }
-    
-    #image04 {
-        /* object-position: 0 0; */
-    }
-
-    #image05 {
-        /* object-position: 0 0; */
-    }
-
-    #image06 {
-        /* object-position: 0 0; */
-    }
-
-    #image07 {
-        /* object-position: 0 0; */
-    }
-
-    #image08 {
-        /* object-position: 0 0; */
-    }
-
-    #image09 {
-        /* object-position: 0 0; */
-    }
-
-    #image10 {
-        /* object-position: 0 0; */
-    }
-}
-
-@media (min-width: 800) {
-
-    /* CSS for images */
-    .croppedImage {
-        object-fit: cover;
-        overflow: hidden;
-        object-position: 0 0;
-    }
-
-    #image01 {
-        /* object-position: 0 0; */
-    }
-
-    #image02 {
-        /* object-position: 0 0; */
-    }
-
-    #image03 {
-        /* object-position: 0 0; */
-    }
-    
-    #image04 {
-        /* object-position: 0 0; */
-    }
-
-    #image05 {
-        /* object-position: 0 0; */
-    }
-
-    #image06 {
-        /* object-position: 0 0; */
-    }
-
-    #image07 {
-        /* object-position: 0 0; */
-    }
-
-    #image08 {
-        /* object-position: 0 0; */
-    }
-
-    #image09 {
-        /* object-position: 0 0; */
-    }
-
-    #image10 {
-        /* object-position: 0 0; */
-    }
-}
-
-.grid-container {
-    display: grid;
-    border: 1px solid red;
-
-    /* Auto = Dynamic # of columms */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 15px;
-    justify-content: center;
-}
+/* } */
 
