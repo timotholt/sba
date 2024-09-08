@@ -152,6 +152,8 @@ h1 {
         /* Overlay is hidden by default and takes 2 seconds to appear */
         opacity: 0;
         transition: 2s;
+
+        /* background-color: red; */
     }
 
     .hiddenOverlay:hover {
@@ -165,6 +167,8 @@ h1 {
         bottom: 1em;
         left: 1em;
         color: white;
+        /* background-color: black; */
+        background: rbga(128,0,0,.5);
     }
 }
 
