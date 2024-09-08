@@ -1,20 +1,18 @@
+/* By default, we have no margin or padding anywhere */
 *{
     margin: 0;
     padding: 0;
 }
 
 html{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: #afafaf;
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* color: black; */
     text-align: center;
 }
 
 body{
-    /* padding: min(50px, 7%); */
     background-color: #cfcfcf;
-    /* background-color: rgb(13, 13, 20); */
-
-    /* padding: 20px; */
 }
 
 h1 {
@@ -23,12 +21,13 @@ h1 {
 
 /* The website is built on cards */
 .card {
+    /* DO NOT REMOVE POSITION RELATIVE OR IT BREAKS ALL KINDS OF STUFF */
+    position: relative;
     text-align: center;
     padding: 0px;
     border: 0px;
     margin: 0px;
 }
-
 
 /* MEDIA QUERY */
 
@@ -36,9 +35,9 @@ h1 {
 @media only screen and (min-width : 480px) {
 
     /* FOR TESTING */
-    body {
+    /* body {
         background-color: blue;
-    }
+    } */
 
     .grid-container {
         display: grid;
@@ -49,11 +48,18 @@ h1 {
     }
 
     /* On tiny screens, we use 16 / 9 */
-    .imageContainer {
+    .imageContainer169 {
         max-width: 100%;
         object-fit: cover;
         overflow: hidden;
         aspect-ratio: 16 / 9;
+    }
+
+    .imageContainer916 {
+        max-width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        aspect-ratio: 9 / 16;
     }
 }
 
@@ -62,7 +68,7 @@ h1 {
 
     /* For testing media queries */
     body {
-        background-color: black;
+        background-color: blue;
     }
 
     /* On big screens, multiple columns with a gap and padding */
@@ -73,19 +79,27 @@ h1 {
     
         /* Auto = Dynamic # of columms */
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        justify-content: center;
+        /* justify-content: center; */
     }
 
-    /* On big screens, we use 16 / 9 */
-    .imageContainer {
+    /* On tiny screens, we use 16 / 9 */
+    .imageContainer169 {
         max-width: 100%;
         object-fit: cover;
         overflow: hidden;
         aspect-ratio: 16 / 9;
     }
+
+    .imageContainer916 {
+        max-width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        aspect-ratio: 16 / 9;
+        object-position: 0% -30%;
+        /* object-position: -1000px; */
+        /* aspect-ratio: 9 / 16; */
+    }
 }
-
-
 
 /* Tiny screens in landscape mode ----------*/
 @media only screen and (min-width : 321px) {
@@ -97,6 +111,46 @@ h1 {
   /* Styles */
 }
 
+/* Touch screens -- text is on hold and fades away */
+@media (pointer : course){
+    .fadingText {
+        
+    }
+}
+
+/* Mouse */
+@media (pointer: fine) {
+
+    /* Just for testing */
+    /* body {
+        background-color: green;
+    } */
+
+    .hiddenOverlay {
+        /* Make sure overlay is the same height and width of the parent and same position */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        /* Overlay is hidden by default and takes 2 seconds to appear */
+        opacity: 0;
+        transition: 2s;
+    }
+
+    .hiddenOverlay:hover {
+        opacity: 1;
+        transition: 2s;
+    }
+
+    .bottomleft {
+        position: absolute;
+        bottom: 1em;
+        left: 1em;
+        color: white;
+    }
+}
 
 /* ALL LANDSCAPE
 @media (orientation: landscape) {
