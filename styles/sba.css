@@ -7,12 +7,69 @@
 html{
     /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    /* color: black; */
+    color: black;
     text-align: center;
 }
 
 body{
     background-color: #cfcfcf;
+}
+
+/* Navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    /* take 100% of the dynamic viewport, or 100% of the viewport if dvw is not supported */
+    /* width: 100vw; */
+    /* width: 100dvw; */
+    height: 3em;
+}
+
+.navbutton, .navbuttonCurrentPage {
+    width: 30%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.navbuttonCurrentPage {
+    font-weight: bold;
+}
+
+/* Anchors */
+a {
+    color: #3f3f3f;
+    text-decoration: none;
+}
+
+a.visited {
+    color: #3f3f3f;
+    text-decoration: none;
+}
+
+/* Mark Knight Title */
+.titleBlock{
+    margin: 2em 2em 2em 2em;
+    text-align: center;
+}
+
+.titleMK {
+    font-size: 2em;
+    letter-spacing: 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.titleJob {
+    margin: 0.5em;
+    font-size: 1.3em;
+    letter-spacing: 0.5em;
+    text-align: center;
+    text-transform: capitalize;
+    /* text-transform: uppercase; */
 }
 
 h1 {
@@ -67,9 +124,9 @@ h1 {
 @media only screen and (min-width : 640px) {
 
     /* For testing media queries */
-    body {
+    /* body {
         background-color: blue;
-    }
+    } */
 
     /* On big screens, multiple columns with a gap and padding */
     .grid-container {
@@ -119,6 +176,7 @@ h1 {
 }
 
 /* ================== MOUSE OVERLAY SUPPORT ============== */
+/* HERE IS ONE OF MY TWO ANIMATIONS */
 
 /* if no mouse (a touch screen device like a phone or tablet), the hidden overlay is disabled */
 @media (pointer: coarse) {
@@ -136,9 +194,9 @@ h1 {
 @media (pointer: fine) {
 
     /* Just for testing */
-    body {
+    /* body {
         background-color: green;
-    }
+    } */
 
     .hiddenOverlay {
         /* Make sure overlay is the same height and width of the parent and same position */
@@ -153,11 +211,10 @@ h1 {
         opacity: 0;
         transition: 2s;
 
-        /* background-color: red; */
     }
 
     .hiddenOverlay:hover {
-        opacity: 1;
+        opacity: 0.8;
         transition: 2s;
     }
 
@@ -166,9 +223,10 @@ h1 {
         position: absolute;
         bottom: 1em;
         left: 1em;
+        padding: 0.5em 1em 0.5em 1em;
         color: white;
-        /* background-color: black; */
-        background: rbga(128,0,0,.5);
+        background-color: #3f3f3f;
+        /* background: rbga(128,0,0,.5); */
     }
 }
 
