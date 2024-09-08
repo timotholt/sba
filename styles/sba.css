@@ -118,16 +118,31 @@ h1 {
     }
 }
 
-/* Mouse */
+/* ================== MOUSE OVERLAY SUPPORT ============== */
+
+/* if no mouse (a touch screen device like a phone or tablet), the hidden overlay is disabled */
+@media (pointer: coarse) {
+    
+    .hiddenOverlay {
+        display: none;
+    }
+
+    .bottomleft {
+        display: none;
+    }
+}
+
+/* if mouse, the hidden overlay is enabled */
 @media (pointer: fine) {
 
     /* Just for testing */
-    /* body {
+    body {
         background-color: green;
-    } */
+    }
 
     .hiddenOverlay {
         /* Make sure overlay is the same height and width of the parent and same position */
+        display: inline;
         position: absolute;
         top: 0;
         left: 0;
@@ -145,6 +160,7 @@ h1 {
     }
 
     .bottomleft {
+        display: inline;
         position: absolute;
         bottom: 1em;
         left: 1em;
