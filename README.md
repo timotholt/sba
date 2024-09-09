@@ -1,6 +1,4 @@
-My SBA project is a traditional photographer's gallery website (of the most popular photographer in the world, only known by his alias 'John Doe'.) It has your usual photo gallery (with 24 curated pictures), it is responsive on mobile devices, has mouse (pc) specific support and animations, and is (nearly) 100% complete.
-
-It also has rudimentary theme support (black and white) that is persistent as you jump across pages (built with javascript and session storage).
+My SBA project is a traditional photographer's gallery website (of the most popular photographer in the world, only known by his alias 'John Doe'.) It has your usual photo gallery (with 24 curated pictures), it is responsive on mobile devices, has mouse (pc) specific support and animations, persistent theme support (built with javascript and session storage) and is (nearly) 100% complete.
 
 The github link: https://github.com/timotholt/sba
 
@@ -10,7 +8,7 @@ The current main branch can be download from: https://github.com/timotholt/sba/a
 
 == ASSIGNMENT REQUIREMENTS AND HOW THEY ARE MET WITH THE SBA PROJECT =====
 
-1. Here is a list of HTML requirements of the assignment and how my submission meets them:
+1. Here is a list of HTML requirements of the assignment and how this submission meets them:
 
 a. Requirement: Have at least 3 pages. Site includes:
 
@@ -40,7 +38,7 @@ e. Requirement: Site includes one of each of the forms of content (text, images,
     24 images is part of the photo gallery
     Animated GIFs are in the social media section in the about page
 
-2. As of this moment (11:41pm on Sunday, 09/08), the website has all the CSS requirements as outlined by the assignemnt requirements:
+2. The website has all the CSS requirements as outlined by the assignemnt requirements:
 
 a. Requirement: make use of inline, internal, and external styling.
 
@@ -60,19 +58,19 @@ c. Requirement: Use colors that compliment each other:
 
 d. Requirement: Use flexbox. I used "display: flex" in the navigation bar.
 
-e. Requirement: Use two CSS animations. The website has three animations: uses onload()+CSS for the page load "fade in" animation, :hover for mouse hover CSS animations (more details in animation section below), and a fade between themes when a new theme is selected.
+e. Requirement: Use two CSS animations.  The website has three animations: uses onload()+CSS for the page load "fade in" animation, :hover for mouse hover CSS animations (more details in animation section below), and a fade between themes when a new theme is selected.
 
-3. NOTE: As of this moment (11:41pm on Sunday, 09/08), the website is currently has a very HUGE glaring ommission that is the most important part of a photography website:
+3. The website is currently has a very HUGE glaring ommission that is the most important part of a photography website:
 
     The ability to click on a picture and provide a modal popup that shows the complete picture on the entire screen.
 
-This feature has conciously been pushed to last due to time constraints.
+I've intentionally pushed this feature off to last due to time constraints.
 
 == FORMS ================
 
 There are two forms:
 
-1. The dropdown box under the website title to select a dark / light theme is a single one line form supported with a few dozen lines of javascript.
+1. The dropdown box under the website title to select a dark / light theme is a single one line form + a few dozen lines of javascript.
 
 2. The second form is your usual basic empty contact form that does nothing.
 
@@ -82,7 +80,7 @@ There are two forms:
 
 2. There is a theme transition animation when the theme is changed.
 
-3. There is a mouse only (no touch support) animation to fade in the project name over each image when the mouse hovers over it.
+3. There is a mouse only hover (no touch support) animation to fade in the project name over each image.
 
 4. There is your usual lame .gif animations on the contact form.
 
