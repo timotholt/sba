@@ -6,6 +6,62 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles/sba.css"/>
     <style>
+        
+        .contactForm {
+            display: grid;
+            grid-template-columns: 1;
+            padding: 1em 0em 1em 1em;
+            /* background-color: blueviolet; */
+            text-align: center;
+            vertical-align: top;
+            align-items: center;
+        }
+
+        hr {
+            width: 100%;
+            padding-bottom: 1em;
+        }
+
+        .tableSize {
+            width: 100%;
+        }
+
+        /* Assignment requires internal styles so I put form stuff here */
+        .messageLine {
+            margin-bottom: 0.5em;
+            width: 80%;
+        }
+        
+        .messageBox {
+            height: 6em;
+            width: 80%;
+            margin-bottom: 0.5em;
+        }
+
+        .fieldLabel {
+            text-align: right;
+            /* vertical-align: center */
+        }
+
+        .fieldInput {
+            text-align: left;
+            padding-left: 1em;
+            width: 80%;
+        }
+
+        .groupName {
+            text-align: right;
+            vertical-align: top;
+            padding-top: 1em;
+        }
+
+        .groupContents {
+            text-align: left;
+            padding-top: 1em;
+            padding-left: 1em;
+            line-height: 1.4em;
+            width: 80%;
+        }
     </style>
 </head>
 <body>
@@ -27,21 +83,85 @@
         </div>
     </div>
 
-    <div class="grid-container">
-        <div class="card">
+    <!-- Mandatory required table -->
+    <table>
+        <tbody>
+            <tr><td class="groupName">Bio</td>
+                <td class="groupContents">John Doe is a freelance photographer, cinematographer, and fashion editor based in Los Angeles, California.</td></tr>
+            <tr><td class="groupName">Publications</td>
+                <td class="groupContents">
+                    W<br/>
+                    Vogue<br/>
+                    Interview<br/>
+                    GQ<br/>
+                    Vanity Fair<br/>
+                    Porter<br/>
+                    Allure<br/>
+                    Elle<br/>
+                    Harper's Bazarr<br/>
+                    L'Officiel / L'Officiel Hommes<br/>
+                    Hercules Universal<br/>
+                    V / Vman<br/>
+                    Numero / Numero Homme<br/>
+                    Hero / Heroine<br/>
+                    10 / 10 Men<br/>
+                    The Face<br/>
+                    The Evening Standard<br/>
+                    The Sunday Times Style<br/>
+                    The New York Times<br/>
+                    Rolling Stone<br/>
+                    Alla Carta<br/>
+                    Love Want<br/>
+                    Lampoon<br/>
+                    Architectural Digest<br/>
+                    <br/>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+
+    <!-- Mandatory required table -->
+    <div><h2>Contact form</h2></div>
+    <form action="#">
+        <div class="contactForm">
             <!-- Mandatory required table -->
             <table>
                 <tbody>
                     <tr>
-                        <td>Instagram</td>
-                        <td>Tiktok</td>
-                        <td>Youtube</td>
-                        <td>X</td>
-                        <td>Linked in</td>
+                        <td class="fieldLabel"><label for="name">Your Name</label></td>
+                        <td class="fieldInput"><input class="messageLine" type="text" id="name" placeholder="Type your name here..." required/></td>
+                    </tr>
+                    <tr>
+                        <td class="fieldLabel"><label for="emailAddress">Your Email</label></td>
+                        <td class="fieldInput"><input class="messageLine" type="email" id="emailAddress" placeholder="Type your email here..." required/></td>
+                    </tr>
+                    <tr>
+                        <td class="fieldLabel"><label for="reason">Title</label></td>
+                        <td class="fieldInput"><input class="messageLine" type="text" id="reason" placeholder="Type a nice salutation here" required/></td>
+                    </tr>
+                    <tr>
+                        <td class="fieldLabel"><label for="message">Message</label></td>
+                        <td class="fieldInput"><input class="messageBox" type="text" id="message" placeholder="Type your message here..." required/></td>
+                    </tr>
+                    <tr>
+                        <td class="fieldLabel"></td>
+                        <td class="fieldInput"><input type="submit" value="Submit" /></td>
                     </tr>
                 </tbody>
             </table>
         </div>
+    </form>
+    <hr>
+    <div>
+        <table class="tableSize"><tbody><tr>
+            <td><a href="https://instagram.com"><img class="socialMediaIcon" src="images\icons8-instagram.gif" alt="Instagram icon"/></a></td>
+            <td><a href="https://facebook.com"><img class="socialMediaIcon" src="images\icons8-facebook.gif" alt="Facebook icon"/></a></td>
+            <td><a href="https://youtube.com"><img class="socialMediaIcon" src="images\icons8-youtube.gif" alt="Youtube icon"/></a></td>
+            <td><a href="https://x.com"><img class="socialMediaIcon" src="images\icons8-x.gif" alt="X icon"/></a></td>
+            <td><a href="https://linkedin.com"><img class="socialMediaIcon" src="images\icons8-linkedin.gif" alt="Linkedin icon"/></a></td>
+        </tr></tbody></table>
     </div>
+    <br/>
 </body>
 </html>
