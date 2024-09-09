@@ -13,6 +13,11 @@ html{
 
 body{
     background-color: white;
+
+    /* Optional: Fade in on page load */
+    opacity: 0;
+    transition: opacity 3s;
+    /* End optional: fade in on page load */
 }
 
 /* Navigation bar */
