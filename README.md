@@ -64,7 +64,7 @@ c. Requirement: Use colors that compliment each other:
 
 d. Requirement: Use flexbox.  I used display: flexbox in the navigation bar (it could have also been display:grid).
 
-e. Requirement: Use two CSS animations.  The website uses onload()+CSS for the page load "fade in" animation, and :hover for mouse hover CSS animations (more details in animation section below).
+e. Requirement: Use two CSS animations.  The website has three animations: uses onload()+CSS for the page load "fade in" animation, :hover for mouse hover CSS animations (more details in animation section below), and a fade between themes when a new theme is selected.
 
 3. NOTE: As of this moment (11:41pm on Sunday, 09/08), the website is currently has a very HUGE glaring ommission that is the most important part of a photography website:
 

@@ -17,6 +17,7 @@ body{
     /* Optional: Fade in on page load */
     opacity: 0;
     transition: opacity 3s;
+    transition: background-color 3s;
     /* End optional: fade in on page load */
 }
 
