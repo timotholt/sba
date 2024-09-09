@@ -115,26 +115,23 @@ h1 {
     /* On tiny screens, we use 16 / 9 */
     .imageContainer169 {
         max-width: 100%;
-        /* object-fit: cover; */
-        object-fit: contain;
+        object-fit: cover;
+        overflow: hidden;
+        aspect-ratio: 16 / 9;
+    }
+
+    .imageContainer43 {
+        max-width: 100%;
+        object-fit: cover;
         overflow: hidden;
         aspect-ratio: 16 / 9;
     }
 
     .imageContainer916 {
         max-width: 100%;
-        /* object-fit: cover; */
-        object-fit: contain;
+        object-fit: cover;
         overflow: hidden;
         aspect-ratio: 9 / 16;
-    }
-
-    .imageContainer43 {
-        max-width: 100%;
-        object-fit: cover;
-        /* object-fit: contain; */
-        overflow: hidden;
-        aspect-ratio: 16 / 9;
     }
 }
 
@@ -165,6 +162,16 @@ h1 {
         aspect-ratio: 16 / 9;
     }
 
+    .imageContainer43 {
+        max-width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        aspect-ratio: 16 / 9;
+        /* object-position: 0% -30%; */
+        /* object-position: -1000px; */
+        /* aspect-ratio: 9 / 16; */
+    }
+
     .imageContainer916 {
         max-width: 100%;
         object-fit: cover;
@@ -174,26 +181,6 @@ h1 {
         /* object-position: -1000px; */
         /* aspect-ratio: 9 / 16; */
     }
-
-    .imageContainer43 {
-        max-width: 100%;
-        object-fit: cover;
-        overflow: hidden;
-        aspect-ratio: 9 / 16;
-        /* object-position: 0% -30%; */
-        /* object-position: -1000px; */
-        /* aspect-ratio: 9 / 16; */
-    }
-
-
-        .imageContainer43 {
-        max-width: 100%;
-        object-fit: cover;
-        /* object-fit: contain; */
-        overflow: hidden;
-        aspect-ratio: 16 / 9;
-    }
-
 }
 
 /* Tiny screens in landscape mode ----------*/
