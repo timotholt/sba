@@ -11,8 +11,8 @@ html{
 }
 
 body{
-    /* background-color: white; */
-    background-color: red;;
+    background-color: white;
+    /* background-color: red;; */
 
     /* Optional: Fade in on page load */
     opacity: 0;
@@ -97,12 +97,12 @@ h1 {
 /* MEDIA QUERY */
 
 /* On tiny Screens, no gap or padding and only a single column */
-/* @media only screen and (max-width : 639px) { */
-@media (max-width : 639px) {
+@media only screen and (max-width : 639px) {
+/* @media (max-width : 639px) { */
     /* FOR TESTING */
-    body {
+    /* body {
         background-color: blue;
-    }
+    } */
 
     .grid-container {
         display: grid;
@@ -115,17 +115,28 @@ h1 {
     /* On tiny screens, we use 16 / 9 */
     .imageContainer169 {
         max-width: 100%;
-        object-fit: cover;
+        /* object-fit: cover; */
+        object-fit: contain;
         overflow: hidden;
         aspect-ratio: 16 / 9;
     }
 
     .imageContainer916 {
         max-width: 100%;
-        object-fit: cover;
+        /* object-fit: cover; */
+        object-fit: contain;
         overflow: hidden;
         aspect-ratio: 9 / 16;
     }
+
+    .imageContainer43 {
+        max-width: 100%;
+        object-fit: cover;
+        /* object-fit: contain; */
+        overflow: hidden;
+        aspect-ratio: 16 / 9;
+    }
+
 }
 
 /* BIG SCREENS */
@@ -133,7 +144,7 @@ h1 {
 
     /* For testing media queries */
     body {
-        background-color: blue;
+        /* background-color: blue; */
     }
 
     /* On big screens, multiple columns with a gap and padding */
@@ -164,6 +175,26 @@ h1 {
         /* object-position: -1000px; */
         /* aspect-ratio: 9 / 16; */
     }
+
+    .imageContainer43 {
+        max-width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        aspect-ratio: 9 / 16;
+        /* object-position: 0% -30%; */
+        /* object-position: -1000px; */
+        /* aspect-ratio: 9 / 16; */
+    }
+
+
+        .imageContainer43 {
+        max-width: 100%;
+        object-fit: cover;
+        /* object-fit: contain; */
+        overflow: hidden;
+        aspect-ratio: 16 / 9;
+    }
+
 }
 
 /* Tiny screens in landscape mode ----------*/
