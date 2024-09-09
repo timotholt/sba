@@ -11,7 +11,8 @@ html{
 }
 
 body{
-    background-color: white;
+    /* background-color: white; */
+    background-color: red;;
 
     /* Optional: Fade in on page load */
     opacity: 0;
@@ -96,12 +97,12 @@ h1 {
 /* MEDIA QUERY */
 
 /* On tiny Screens, no gap or padding and only a single column */
-@media only screen and (max-width : 639px) {
-
+/* @media only screen and (max-width : 639px) { */
+@media (max-width : 639px) {
     /* FOR TESTING */
-    /* body {
+    body {
         background-color: blue;
-    } */
+    }
 
     .grid-container {
         display: grid;
