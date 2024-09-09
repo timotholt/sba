@@ -10,13 +10,13 @@ function onLoadStuff()
     }
 
     // Load colors from theme
-    if (theme=="Dark")
+    if (theme==="Dark")
     {
         console.log("Loading Dark theme from session storage");
         document.body.style.backgroundColor = 'black';
             document.body.style.color = 'white';
             document.getElementById("themes").selectedIndex = 1;
-    } else if (theme=="Light")
+    } else if (theme==="Light")
     {
         console.log("Loading Light theme from session storage");
         document.body.style.backgroundColor = 'white';
@@ -38,7 +38,7 @@ function changeEventHandler(event)
     if (!event.target.value) {} else
     {
         // document.body.style.backgroundColor = event.target.value;
-        if (event.target.value=="Light")
+        if (event.target.value==="Light")
         {
             document.body.style.backgroundColor = 'white';
             document.body.style.color = 'black';
@@ -47,7 +47,7 @@ function changeEventHandler(event)
             sessionStorage.setItem("theme", event.target.value);
             console.log("Set theme to",event.target.value);
 
-        } else if (event.target.value=="Dark")
+        } else if (event.target.value==="Dark")
         {
             document.body.style.backgroundColor = 'black';
             document.body.style.color = 'white';
@@ -57,6 +57,5 @@ function changeEventHandler(event)
             console.log("Set theme to",event.target.value);
 
         }
-        //  = event.target.value;
     }
 }
