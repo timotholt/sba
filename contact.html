@@ -54,13 +54,20 @@
 
 <!-- <body> -->
 <!-- Fade in animation on document body -->
-<body onload="document.body.style.opacity='1'">
+<body onload="onLoadStuff()">
 
     <div class="titleBlock">
         <div class="titleMK">John Doe</div>
         <div class="titleJob">Photographer</div>
+        <br/>
+        <form action="" name="themes" method="post">
+            <select name="themes" id="themes">
+                <option value="Light" selected="select">Light</option>
+                <option value="Dark">Dark</option>
+            </select>
+        </form>    
     </div>
-
+    
     <!-- Navigation bar -->
     <div class="navbar">
         <div class="navbutton">
@@ -116,5 +123,8 @@
             <td><a href="https://linkedin.com"><img class="socialMediaIcon" src="images\icons8-linkedin.gif" alt="Linkedin icon"/></a></td>
         </tr></tbody></table>
     </div>
+
+    <!-- Javascript to handle background color -->
+    <script src="scripts/sba.js"></script>
 </body>
 </html>

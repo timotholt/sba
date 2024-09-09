@@ -8,12 +8,19 @@
     <style>
     </style>
 </head>
-<!-- <body> -->
-<!-- Fade in animation on document body -->
-<body onload="document.body.style.opacity='1'">
+
+<body onload="onLoadStuff()">
+
     <div class="titleBlock">
         <div class="titleMK">John Doe</div>
         <div class="titleJob">Photographer</div>
+        <br/>
+        <form action="" name="themes" method="post">
+            <select name="themes" id="themes">
+                <option value="Light" selected="select">Light</option>
+                <option value="Dark">Dark</option>
+            </select>
+        </form>    
     </div>
 
     <!-- Navigation bar -->
@@ -175,6 +182,9 @@
             </div>        
         </div>
     </div>
+
+    <!-- Javascript to handle background color -->
+    <script src="scripts/sba.js"></script>
 </body>
 </html>
 

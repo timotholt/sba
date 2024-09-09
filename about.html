@@ -69,11 +69,18 @@
 
 <!-- <body> -->
 <!-- Fade in animation on document body -->
-<body onload="document.body.style.opacity='1'">
+<body onload="onLoadStuff()">
 
     <div class="titleBlock">
         <div class="titleMK">John Doe</div>
         <div class="titleJob">Photographer</div>
+        <br/>
+        <form action="" name="themes" method="post">
+            <select name="themes" id="themes">
+                <option value="Light" selected="select">Light</option>
+                <option value="Dark">Dark</option>
+            </select>
+        </form>    
     </div>
 
     <!-- Navigation bar -->
@@ -126,39 +133,6 @@
         </tbody>
     </table>
     <hr>
-
-    <!-- Mandatory required table -->
-    <div><h2>Survey</h2></div>
-    <form action="#">
-        <div class="contactForm">
-            <!-- Mandatory required table -->
-            <table>
-                <tbody>
-                    <tr>
-                        <td class="fieldLabel"><label for="name">Your Name</label></td>
-                        <td class="fieldInput"><input class="messageLine" type="text" id="name" placeholder="Type your name here..." required/></td>
-                    </tr>
-                    <tr>
-                        <td class="fieldLabel"><label for="emailAddress">Your Email</label></td>
-                        <td class="fieldInput"><input class="messageLine" type="email" id="emailAddress" placeholder="Type your email here..." required/></td>
-                    </tr>
-                    <tr>
-                        <td class="fieldLabel"><label for="reason">Title</label></td>
-                        <td class="fieldInput"><input class="messageLine" type="text" id="reason" placeholder="Type a nice salutation here" required/></td>
-                    </tr>
-                    <tr>
-                        <td class="fieldLabel"><label for="message">Message</label></td>
-                        <td class="fieldInput"><input class="messageBox" type="text" id="message" placeholder="Type your message here..." required/></td>
-                    </tr>
-                    <tr>
-                        <td class="fieldLabel"></td>
-                        <td class="fieldInput"><input type="submit" value="Submit" /></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </form>
-    <hr>
     <div>
         <table class="tableSize"><tbody><tr>
             <td><a href="https://instagram.com"><img class="socialMediaIcon" src="images\icons8-instagram.gif" alt="Instagram icon"/></a></td>
@@ -169,5 +143,8 @@
         </tr></tbody></table>
     </div>
     <br/>
+
+    <!-- Javascript to handle background color -->
+    <script src="scripts/sba.js"></script>
 </body>
 </html>
