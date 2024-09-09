@@ -96,7 +96,7 @@ h1 {
 /* MEDIA QUERY */
 
 /* On tiny Screens, no gap or padding and only a single column */
-@media only screen and (min-width : 480px) {
+@media only screen and (max-width : 639px) {
 
     /* FOR TESTING */
     /* body {
@@ -131,9 +131,9 @@ h1 {
 @media only screen and (min-width : 640px) {
 
     /* For testing media queries */
-    /* body {
+    body {
         background-color: blue;
-    } */
+    }
 
     /* On big screens, multiple columns with a gap and padding */
     .grid-container {
