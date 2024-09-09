@@ -1,11 +1,10 @@
-/* By default, we have no margin or padding anywhere */
+/* Overall look of the website */
 *{
     margin: 0;
     padding: 0;
 }
 
 html{
-    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
     text-align: center;
@@ -26,10 +25,6 @@ body{
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-
-    /* take 100% of the dynamic viewport, or 100% of the viewport if dvw is not supported */
-    /* width: 100vw; */
-    /* width: 100dvw; */
     height: 3em;
 }
 
@@ -62,13 +57,13 @@ a.visited {
     width: 1.5em;
 }
 
-/* Mark Knight Title */
+/* Title block including photographer name and title */
 .titleBlock{
     margin: 2em 2em 2em 2em;
     text-align: center;
 }
 
-.titleMK {
+.titleJD {
     font-size: 2em;
     letter-spacing: 1em;
     text-align: center;
