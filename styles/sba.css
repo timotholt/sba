@@ -4,20 +4,20 @@
     padding: 0;
 }
 
-html{
+html {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
     text-align: center;
 }
 
-body{
+body {
     background-color: white;
-    /* background-color: red;; */
+    opacity: 1;
 
-    /* Optional: Fade in on page load */
+    /* Optional: Fade in on page load.  Comment out this code to disable the global page load animation */
+    /* Note: Doesn't disable the portfolio fade in animations */
     opacity: 0;
-    /* opacity: 1; */
-    transition: opacity 2s, background-color 3s;
+    transition: opacity 3s, background-color 3s;
     animation-fill-mode: forwards;
     /* End optional: fade in on page load */
 }
