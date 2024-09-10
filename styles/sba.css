@@ -110,49 +110,53 @@ h1 {
 /* ================= EVERYTHING BELOW IS FOR THE FADE IN ANIMATION ==================== */
 /* ================= COMMENT OUT THIS BLOCK TO REMOVE THE ANIMATION =================== */
 
+/* This defines what the animation actually does, but not it's length or mode */
 @keyframes imageCardFadeIn {
-    from {
-        opacity: 0.00;
-    }
-
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .imageCard {
-
-    opacity: 0;
     animation-name: imageCardFadeIn;
     animation-duration: 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    opacity: 0;
 }
 
-.imageCard:nth-of-type(1)  { animation-delay: 0.4s; }
-.imageCard:nth-of-type(2)  { animation-delay: 0.6s; }
-.imageCard:nth-of-type(3)  { animation-delay: 0.8s; }
-.imageCard:nth-of-type(4)  { animation-delay: 1.0s; }
-.imageCard:nth-of-type(5)  { animation-delay: 1.2s; }
-.imageCard:nth-of-type(6)  { animation-delay: 1.5s; }
-.imageCard:nth-of-type(7)  { animation-delay: 1.6s; }
-.imageCard:nth-of-type(8)  { animation-delay: 1.8s; }
-.imageCard:nth-of-type(9)  { animation-delay: 2.0s; }
-.imageCard:nth-of-type(10) { animation-delay: 2.2s; }
-.imageCard:nth-of-type(11) { animation-delay: 2.4s; }
-.imageCard:nth-of-type(12) { animation-delay: 2.6s; }
-.imageCard:nth-of-type(13) { animation-delay: 2.8s; }
-.imageCard:nth-of-type(14) { animation-delay: 3.0s; }
-.imageCard:nth-of-type(15) { animation-delay: 3.2s; }
-.imageCard:nth-of-type(16) { animation-delay: 3.4s; }
-.imageCard:nth-of-type(17) { animation-delay: 3.6s; }
-.imageCard:nth-of-type(18) { animation-delay: 3.8s; }
-.imageCard:nth-of-type(19) { animation-delay: 4.0s; }
-.imageCard:nth-of-type(20) { animation-delay: 4.2s; }
-.imageCard:nth-of-type(21) { animation-delay: 4.4s; }
-.imageCard:nth-of-type(22) { animation-delay: 4.6s; }
-.imageCard:nth-of-type(23) { animation-delay: 4.8s; }
-.imageCard:nth-of-type(24) { animation-delay: 5.0s; }
+:root {
+    /* # seconds before the overall animation is started */
+    --delayBase: 0.2s;
+
+    /* delay between each image */
+    --delayBetween: 0.2s;
+}
+
+/* Don't change anything here, but add and subtract rows as needed */
+.imageCard:nth-of-type(1)  { animation-delay: calc(01 * var(--delayBetween) + var(--delayBase)); }
+.imageCard:nth-of-type(2)  { animation-delay: calc(02 * var(--delayBetween) + var(--delayBase)); }
+.imageCard:nth-of-type(3)  { animation-delay: calc(03 * var(--delayBetween) + var(--delayBase)); }
+.imageCard:nth-of-type(4)  { animation-delay: calc(04 * var(--delayBetween) + var(--delayBase)); }
+.imageCard:nth-of-type(5)  { animation-delay: calc(05 * var(--delayBetween) + var(--delayBase)); }
+.imageCard:nth-of-type(6)  { animation-delay: calc(06 * var(--delayBetween) + var(--delayBase)); }
+.imageCard:nth-of-type(7)  { animation-delay: calc(07 * var(--delayBetween) + var(--delayBase)); }
+.imageCard:nth-of-type(8)  { animation-delay: calc(08 * var(--delayBetween) + var(--delayBase)); }
+.imageCard:nth-of-type(9)  { animation-delay: calc(09 * var(--delayBetween) + var(--delayBase)); }
+.imageCard:nth-of-type(10) { animation-delay: calc(10 * var(--delayBetween) + var(--delayBase)); }
+.imageCard:nth-of-type(11) { animation-delay: calc(11 * var(--delayBetween) + var(--delayBase)); }
+.imageCard:nth-of-type(12) { animation-delay: calc(12 * var(--delayBetween) + var(--delayBase)); }
+.imageCard:nth-of-type(13) { animation-delay: calc(13 * var(--delayBetween) + var(--delayBase)); }
+.imageCard:nth-of-type(14) { animation-delay: calc(14 * var(--delayBetween) + var(--delayBase)); }
+.imageCard:nth-of-type(15) { animation-delay: calc(15 * var(--delayBetween) + var(--delayBase)); }
+.imageCard:nth-of-type(16) { animation-delay: calc(16 * var(--delayBetween) + var(--delayBase)); }
+.imageCard:nth-of-type(17) { animation-delay: calc(17 * var(--delayBetween) + var(--delayBase)); }
+.imageCard:nth-of-type(18) { animation-delay: calc(18 * var(--delayBetween) + var(--delayBase)); }
+.imageCard:nth-of-type(19) { animation-delay: calc(19 * var(--delayBetween) + var(--delayBase)); }
+.imageCard:nth-of-type(20) { animation-delay: calc(20 * var(--delayBetween) + var(--delayBase)); }
+.imageCard:nth-of-type(21) { animation-delay: calc(21 * var(--delayBetween) + var(--delayBase)); }
+.imageCard:nth-of-type(22) { animation-delay: calc(22 * var(--delayBetween) + var(--delayBase)); }
+.imageCard:nth-of-type(23) { animation-delay: calc(23 * var(--delayBetween) + var(--delayBase)); }
+.imageCard:nth-of-type(24) { animation-delay: calc(24 * var(--delayBetween) + var(--delayBase)); }
 
 /* ================= EVERYTHING ABOVE IS FOR THE FADE IN ANIMATION ==================== */
 
