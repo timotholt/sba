@@ -17,7 +17,7 @@ body{
     /* Optional: Fade in on page load */
     opacity: 0;
     /* opacity: 1; */
-    transition: opacity 1s, background-color 3s;
+    transition: opacity 2s, background-color 3s;
     animation-fill-mode: forwards;
     /* End optional: fade in on page load */
 }
@@ -97,6 +97,19 @@ h1 {
     opacity: 1;
 }
 
+.imageCard {
+    /* DO NOT REMOVE POSITION RELATIVE OR IT BREAKS ALL KINDS OF STUFF */
+    position: relative;
+    text-align: center;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    opacity: 1;
+}
+
+/* ================= EVERYTHING BELOW IS FOR THE FADE IN ANIMATION ==================== */
+/* ================= COMMENT OUT THIS BLOCK TO REMOVE THE ANIMATION =================== */
+
 @keyframes imageCardFadeIn {
     from {
         opacity: 0.00;
@@ -108,15 +121,7 @@ h1 {
 }
 
 .imageCard {
-    /* DO NOT REMOVE POSITION RELATIVE OR IT BREAKS ALL KINDS OF STUFF */
-    position: relative;
-    text-align: center;
-    padding: 0px;
-    border: 0px;
-    margin: 0px;
-    opacity: 1;
 
-    /* EVERYTHING BELOW IS FOR THE FADE IN ANIMATION */
     opacity: 0;
     animation-name: imageCardFadeIn;
     animation-duration: 3s;
@@ -124,126 +129,33 @@ h1 {
     animation-fill-mode: forwards;
 }
 
-/* Individual delays for each card - 1 second delay for the first card, and add .2 seconds to each */
-.imageCard:nth-of-type(1)
-{
-    animation-delay: 1s;
-}
+.imageCard:nth-of-type(1)  { animation-delay: 0.4s; }
+.imageCard:nth-of-type(2)  { animation-delay: 0.6s; }
+.imageCard:nth-of-type(3)  { animation-delay: 0.8s; }
+.imageCard:nth-of-type(4)  { animation-delay: 1.0s; }
+.imageCard:nth-of-type(5)  { animation-delay: 1.2s; }
+.imageCard:nth-of-type(6)  { animation-delay: 1.5s; }
+.imageCard:nth-of-type(7)  { animation-delay: 1.6s; }
+.imageCard:nth-of-type(8)  { animation-delay: 1.8s; }
+.imageCard:nth-of-type(9)  { animation-delay: 2.0s; }
+.imageCard:nth-of-type(10) { animation-delay: 2.2s; }
+.imageCard:nth-of-type(11) { animation-delay: 2.4s; }
+.imageCard:nth-of-type(12) { animation-delay: 2.6s; }
+.imageCard:nth-of-type(13) { animation-delay: 2.8s; }
+.imageCard:nth-of-type(14) { animation-delay: 3.0s; }
+.imageCard:nth-of-type(15) { animation-delay: 3.2s; }
+.imageCard:nth-of-type(16) { animation-delay: 3.4s; }
+.imageCard:nth-of-type(17) { animation-delay: 3.6s; }
+.imageCard:nth-of-type(18) { animation-delay: 3.8s; }
+.imageCard:nth-of-type(19) { animation-delay: 4.0s; }
+.imageCard:nth-of-type(20) { animation-delay: 4.2s; }
+.imageCard:nth-of-type(21) { animation-delay: 4.4s; }
+.imageCard:nth-of-type(22) { animation-delay: 4.6s; }
+.imageCard:nth-of-type(23) { animation-delay: 4.8s; }
+.imageCard:nth-of-type(24) { animation-delay: 5.0s; }
 
-.imageCard:nth-of-type(2)
-{
-    animation-delay: 1.20s;
-}
+/* ================= EVERYTHING ABOVE IS FOR THE FADE IN ANIMATION ==================== */
 
-.imageCard:nth-of-type(3)
-{
-    animation-delay: 1.40s;
-}
-
-.imageCard:nth-of-type(4)
-{
-    animation-delay: 1.60s;
-}
-
-.imageCard:nth-of-type(5)
-{
-    animation-delay: 1.80s;
-}
-
-.imageCard:nth-of-type(6)
-{
-    animation-delay: 2.00s;
-}
-
-.imageCard:nth-of-type(7)
-{
-    animation-delay: 2.20s;
-}
-
-.imageCard:nth-of-type(8)
-{
-    animation-delay: 2.40s;
-}
-
-.imageCard:nth-of-type(9)
-{
-    animation-delay: 2.60s;
-}
-
-.imageCard:nth-of-type(10)
-{
-    animation-delay: 2.80s;
-}
-
-.imageCard:nth-of-type(11)
-{
-    animation-delay: 3.0s;
-}
-
-.imageCard:nth-of-type(12)
-{
-    animation-delay: 3.2s;
-}
-
-.imageCard:nth-of-type(13)
-{
-    animation-delay: 3.4s;
-}
-
-.imageCard:nth-of-type(14)
-{
-    animation-delay: 3.6s;
-}
-
-.imageCard:nth-of-type(15)
-{
-    animation-delay: 3.8s;
-}
-
-.imageCard:nth-of-type(16)
-{
-    animation-delay: 4.0s;
-}
-
-.imageCard:nth-of-type(17)
-{
-    animation-delay: 4.2s;
-}
-
-.imageCard:nth-of-type(18)
-{
-    animation-delay: 4.4s;
-}
-
-.imageCard:nth-of-type(19)
-{
-    animation-delay: 4.6s;
-}
-
-.imageCard:nth-of-type(20)
-{
-    animation-delay: 4.8s;
-}
-
-.imageCard:nth-of-type(21)
-{
-    animation-delay: 5.0s;
-}
-
-.imageCard:nth-of-type(22)
-{
-    animation-delay: 5.2s;
-}
-
-.imageCard:nth-of-type(23)
-{
-    animation-delay: 5.4s;
-}
-
-.imageCard:nth-of-type(24)
-{
-    animation-delay: 5.6s;
-}
 
 /* ==================================== MEDIA QUERY STUFF ===============================/
 
