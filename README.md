@@ -58,7 +58,12 @@ c. Requirement: Use colors that compliment each other:
 
 d. Requirement: Use flexbox. I used "display: flex" in the navigation bar.
 
-e. Requirement: Use two CSS animations.  The website has three animations: uses onload()+CSS for the page load "fade in" animation, :hover for mouse hover CSS animations (more details in animation section below), and a fade between themes when a new theme is selected.
+e. Requirement: Use two CSS animations.  The website has four animations:
+
+    i. an onload()+CSS for the page load "fade in" animation
+    ii. a per image "fade in" animation for the entire gallery (that is staggered)
+    iii. ():hover for mouse hover CSS animations (more details in animation section below)
+    iv. and a fade between themes when a new theme is selected.
 
 3. The website is currently has a very HUGE glaring ommission that is the most important part of a photography website:
 
@@ -76,13 +81,15 @@ There are two forms:
 
 == ANIMATIONS ================
 
-1. There is a onload() page animation that fades the entire body on load.
+1. There is a onload() page animation that fades the entire body on load.  Most noticeable on the contact and about pages.
 
-2. There is a theme transition animation when the theme is changed.
+2. There is an additional big animation on portfolio page, where each image fades in one after the other.  This is in addition to the onload().
 
-3. There is a mouse only hover (no touch support) animation to fade in the project name over each image.
+3. There is a theme transition animation when the theme is changed.
 
-4. There is your usual lame .gif animations on the contact form.
+4. There is a mouse only hover (no touch support) animation to fade in the project name over each image.
+
+5. There is your usual lame .gif animations on the contact form.
 
 == FILES ================
 
