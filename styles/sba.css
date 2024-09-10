@@ -83,17 +83,7 @@ a.visited {
 }
 
 /* The website is built on cards */
-.card {
-    /* DO NOT REMOVE POSITION RELATIVE OR IT BREAKS ALL KINDS OF STUFF */
-    position: relative;
-    text-align: center;
-    padding: 0em;
-    border: 0em;
-    margin: 0em;
-    opacity: 1;
-}
-
-.imageCard {
+.card, .imageCard {
     /* DO NOT REMOVE POSITION RELATIVE OR IT BREAKS ALL KINDS OF STUFF */
     position: relative;
     text-align: center;
