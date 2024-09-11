@@ -176,6 +176,16 @@ a.visited {
         justify-content: center;
     }
 
+    /* Handle scroll snapping on cellphones.  Delete this block if it doesn't work */
+    .grid-container {
+        /* We do scroll snapping on cellphones. Delete this if it doesn't work */
+        scroll-snap-type: y mandatory;
+    }
+    .imageCard {
+        scroll-snap-align: start;
+    }
+
+
     /* On tiny screens, we use 16 / 9 */
     .imageContainer169 {
         max-width: 100%;
