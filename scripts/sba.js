@@ -41,6 +41,7 @@ function onLoadStuff()
     document.querySelector('select[name="themes"]').onchange = changeEventHandler;
 }
 
+/* Handles the dropdown box for changing themes */
 function changeEventHandler(event)
 {
     if (!event.target.value) {} else
