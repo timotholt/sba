@@ -197,6 +197,28 @@ a.visited {
         overflow: hidden;
         aspect-ratio: 9 / 16;
     }
+
+    .XimageContainer169 {
+        max-width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        aspect-ratio: 16 / 9;
+    }
+
+    .XimageContainer43 {
+        max-width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        aspect-ratio: 16 / 9;
+    }
+
+    .XimageContainer916 {
+        max-width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        aspect-ratio: 9 / 16;
+    }
+
 }
 
 /* BIG SCREENS */
@@ -244,6 +266,33 @@ a.visited {
         object-position: 0% -30%;
         /* object-position: -1000px; */
         /* aspect-ratio: 9 / 16; */
+    }
+
+    .XimageContainer169 {
+        max-width: 80%;
+        height: auto;
+
+        object-fit: cover;
+        overflow: hidden;
+        aspect-ratio: 16 / 9;
+    }
+
+    .XimageContainer43 {
+        max-width: 80%;
+        height: auto;
+
+        object-fit: cover;
+        overflow: hidden;
+        aspect-ratio: 4 / 3;
+    }
+
+    .XimageContainer916 {
+        max-width: 40%;
+        height: auto;
+
+        object-fit: cover;
+        overflow: hidden;
+        aspect-ratio: 9 / 16;
     }
 }
 
