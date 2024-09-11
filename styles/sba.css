@@ -110,7 +110,7 @@ a.visited {
 
 .imageCard {
     animation-name: imageCardFadeIn;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     opacity: 0;

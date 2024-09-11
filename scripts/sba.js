@@ -1,3 +1,11 @@
+/*===========================================================
+Disable all right mouse clicks and selecting text
+===========================================================*/
+
+document.oncontextmenu =new Function("return false;");
+document.onselectstart =new Function("return false;");
+
+/* Handle all website themes and background animation stuff in onLoadStuff() */
 function onLoadStuff()
 {
     // Get the saved colors (if any)
