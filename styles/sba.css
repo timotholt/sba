@@ -218,7 +218,6 @@ a.visited {
         overflow: hidden;
         aspect-ratio: 9 / 16;
     }
-
 }
 
 /* BIG SCREENS */
@@ -357,14 +356,14 @@ a.visited {
     }
 
     .bottomleft {
-        display: inline;
         position: absolute;
-        bottom: 1em;
-        left: 1em;
+        bottom: 5%;
+        left: 50%;
+        transform: translate(-50%, 0%);
         padding: 0.5em 1em 0.5em 1em;
         color: white;
         background-color: #3f3f3f;
-        /* background: rbga(128,0,0,.5); */
+        text-align: center;
     }
 }
 
