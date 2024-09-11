@@ -152,6 +152,11 @@ a.visited {
 
 /* ================= EVERYTHING ABOVE IS FOR THE FADE IN ANIMATION ==================== */
 
+/* DOESN'T WORK  */
+/* .grid-container {
+    display: grid;
+    z-index: 2;
+} */
 
 /* ==================================== MEDIA QUERY STUFF ===============================/
 
