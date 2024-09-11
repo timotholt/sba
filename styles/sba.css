@@ -68,20 +68,24 @@ a.visited {
 }
 
 .titleJD {
-    font-size: 2em;
-    letter-spacing: 1em;
-    /* Compensate for all browsers centering bug */
-    padding-left: 1em;
     text-align: center;
     text-transform: uppercase;
+    font-size: 2em;
+
+    /* Double space between letters and compensate for all browsers centering bug */
+    letter-spacing: 1em;
+    margin-right: -1em;
 }
 
 .titleJob {
-    margin: 0.5em;
-    font-size: 1.3em;
-    letter-spacing: 0.5em;
     text-align: center;
     text-transform: capitalize;
+    font-size: 1.3em;
+    margin: 0.5em;
+
+    /* Double space between letters and compensate for all browsers centering bug */
+    letter-spacing: 0.5em;
+    margin-right: -0.5em;
 }
 
 /* The website is built on cards */
