@@ -7,21 +7,17 @@
     <link rel="stylesheet" href="styles/sba.css"/>
     <style>
 
-        /* This style is a virtual full window overlay to hide the website when a popup image window is open  */
+        /* This style is a full window overlay to obscure the website when a popup image window is open  */
         .hideScreenBackground {
             position: fixed;
-            top: 0;
-            left: 0;
+            top: 0em;
+            left: 0em;
             height: 100%;
             width: 100%;
             background-color: rgba(0,0,0,.8);
             display: flex;
             justify-content: center;
             align-items: center;
-            z-index: 200;
-
-            /* z-index: -1;
-            order: 1; */
         }
 
         .hideScreenBackground:not(:target) {
@@ -36,9 +32,6 @@
         }
 
         .popupCloseButton {
-            /* position: fixed; */
-            /* top: 0em; */
-            /* right: 0em; */
             height: 100%;
             width: 100%;
             color: white;

@@ -9,12 +9,22 @@ html {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
     text-align: center;
+
+    /* overflow: scroll; */
 }
 
 body {
+
+    /* scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+    scroll-snap-type: x mandatory;
+    overflow: scroll; */
+
     background-color: white;
     opacity: 1;
 
+    
     /* Optional: Fade in on page load.  Comment out this code to disable the global page load animation */
     /* Note: Doesn't disable the portfolio fade in animations */
     opacity: 0;
@@ -152,11 +162,6 @@ a.visited {
 
 /* ================= EVERYTHING ABOVE IS FOR THE FADE IN ANIMATION ==================== */
 
-/* DOESN'T WORK  */
-/* .grid-container {
-    display: grid;
-    z-index: 2;
-} */
 
 /* ==================================== MEDIA QUERY STUFF ===============================/
 
@@ -177,14 +182,14 @@ a.visited {
     }
 
     /* Handle scroll snapping on cellphones.  Delete this block if it doesn't work */
-    .grid-container {
+    /* .grid-container { */
         /* We do scroll snapping on cellphones. Delete this if it doesn't work */
-        scroll-snap-type: y mandatory;
-    }
-    .imageCard {
-        scroll-snap-align: start;
-    }
-
+        /* scroll-snap-type: y mandatory; */
+        /* overflow: scroll; */
+    /* } */
+    /* .imageCard { */
+        /* scroll-snap-align: start; */
+    /* } */
 
     /* On tiny screens, we use 16 / 9 */
     .imageContainer169 {
@@ -248,6 +253,16 @@ a.visited {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         /* justify-content: center; */
     }
+
+    /* Handle scroll snapping on cellphones.  Delete this block if it doesn't work */
+    /* .grid-container { */
+        /* We do scroll snapping on cellphones. Delete this if it doesn't work */
+        /* scroll-snap-type: y mandatory; */
+        /* overflow: scroll; */
+    /* } */
+    /* .imageCard { */
+        /* scroll-snap-align: start; */
+    /* } */
 
     /* On tiny screens, we use 16 / 9 */
     .imageContainer169 {
