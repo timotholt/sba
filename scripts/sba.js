@@ -14,7 +14,7 @@ function onLoadStuff()
     if (theme!="Dark" && theme!="Light")
     {
         console.log("No theme in sessionStorage");
-        theme="Light";
+        theme="Dark";
     }
 
     // Load colors from theme
